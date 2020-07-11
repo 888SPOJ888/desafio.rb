@@ -1,11 +1,21 @@
-a = [2,4,6]
-b = [10,20,30]
+arr_1 = [10, 20, 30]
+arr_2 = [40, 50, 60, 70]
 
-def compra_arrays(arr1,arr2)
-    avrg_arr = []
-    avrg_arr.push(arr1.sum.to_f/arr1.count)
-    avrg_arr.push(arr1.sum.to_f/arr2.count)
-    print avrg_arr.max
+def arrays(arr_1, arr_2)
+    a = arr_1.inject(0) do |sum , x|
+        sum + x
+        end
+    a = a/ arr_1.count
+    b = arr_2.inject(0) do |sum , x|
+        sum + x
+    end
+    b = b / arr_2.count
+    if a > b
+        return a
+    else 
+        return b
+    end
 end
 
-compra_arrays(a,b)
+result = arrays(arr_1, arr_2)
+puts result
