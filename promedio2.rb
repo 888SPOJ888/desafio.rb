@@ -1,7 +1,7 @@
 arr_1 = [10, 20, 30]
 arr_2 = [40, 50, 60, 70]
 
-def arrays(arr_1, arr_2)
+def compara_arrays(arr_1, arr_2)
     a = arr_1.inject(0) do |sum , x|
         sum + x
         end
@@ -17,5 +17,5 @@ def arrays(arr_1, arr_2)
     end
 end
 
-result = arrays(arr_1, arr_2)
+result = compara_arrays(arr_1, arr_2)
 puts result
