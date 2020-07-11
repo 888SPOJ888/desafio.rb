@@ -1,3 +1,6 @@
+pasos = ['100', '21', '231as', '2031', '1052000', '213b', '123']
+resultado = clear_steps(pasos)
+
 def clear_steps(steps)
     a = steps.select do |step|
         largo_original = step.length
@@ -11,6 +14,4 @@ def clear_steps(steps)
     return b 
 end
 
-pasos = ['100', '21', '231as', '2031', '1052000', '213b', '123']
-resultado = clear_steps(pasos)
 print resultado
